@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Attendance</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🎓 BICTE 3rd Sem Attendance</h1>
+  <div class="card">
+    <label>Roll Number</label>
+    <input type="text" id="roll" placeholder="Enter Roll Number" oninput="fetchStudentName()">
+
+    <label>Student Name</label>
+    <input type="text" id="name" placeholder="Student Name" readonly>
+
+    <label>Subject</label>
+    <select id="subject">
+      <option value="">-- Select Subject --</option>
+      <option value="CAO">CAO</option>
+      <option value="DSA">DSA</option>
+      <option value="Web">Web</option>
+      <option value="21th Century">21th Century</option>
+      <option value="Psychology">Psychology</option>
+      <option value="Math">Math</option>
+    </select>
+
+    <label>Status</label>
+    <select id="status">
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+
+<button type="button" onclick="submitAttendance()">Submit 🚀</button>
+    <p id="msg"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
